@@ -2,7 +2,7 @@ public class BasicMaths {
 
     static void printDigit(int num){
         //agr number = 0 h to main ruk jauga
-        // agr mere no != 0 h to me processing kruga
+        // agr mere no != 0 h to me processing kruga ...
         while(num!=0){
            int digit = num%10;
             System.out.println(digit);
