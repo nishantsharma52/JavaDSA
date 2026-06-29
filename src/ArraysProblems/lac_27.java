@@ -30,7 +30,7 @@ public class lac_27 {
 //                    }
 //                }
 //                //agr poora array travel ho chuka hai
-//                //and ek varr bhi target nhi mila
+//                //and ek varr bhii target nhi mila
 //                //iska mtb target is not present in array
 //                return  false;
 //            }
