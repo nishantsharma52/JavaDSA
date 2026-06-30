@@ -1,5 +1,7 @@
 package ArraysProblems;
 
+import java.util.HashMap;
+
 public class lac_28 {
 //     problem 1   reverse an array....
 //    static  void reverseArray(int [] arr){
@@ -54,10 +56,41 @@ public class lac_28 {
 //    }
 //}
 
+//problem: 4  get mode  mtlb kon sa element sbse jyada bar aaya print kro
+
+static int getMode(int[] arr){
+    HashMap<Integer,Integer> freq = new HashMap<>();
+    for(int num: arr){
+        freq.put(num,freq.getOrDefault(num,0) + 1);
+    }
+
+    for(int i: freq.keySet()){
+//        i will  represent key
+        System.out.println(i +" -> " + freq.get(i));
+    }
+
+    int maxFreq = -1;
+    int maxFreqWaliKey = -1;
+
+    for(int key: freq.keySet()){
+        int currentKey = key;
+        int currentKeyKiFreq = freq.get(key);
+        if(currentKeyKiFreq> maxFreq){
+            //muje new max mil gya
+            maxFreq= currentKeyKiFreq;
+            maxFreqWaliKey = currentKey;
+        }
+    }
+    return  maxFreqWaliKey;
+}
+
+
 
 
     static void main() {
-//        int [] arr = {1,2,3,4,5};
+        int [] arr = {1,2,3,4,4,4,4,5,4,5,5,5,5,5,5};
+        int ans = getMode(arr);
+        System.out.println( "sbse jyada frequency " + ans + " ki h");
 ////        shiftBy1(arr);
 //        printAlternaate(arr);
 
