@@ -84,13 +84,45 @@ static int getMode(int[] arr){
     return  maxFreqWaliKey;
 }
 
+    //Problem-5
+    static int[] getHighestLowestFreqElement(int arr[]){
+        HashMap<Integer, Integer> freq = new HashMap<>();
+        for(int num : arr){
+            freq.put(num, freq.getOrDefault(num, 0)+1);
+        }
+        int highestFreq = Integer.MIN_VALUE;
+        int highestNum = -1;
+        for (int key : freq.keySet()){
+            int currentKey = key;
+            int currentFreq = freq.get(currentKey);
+            if(currentFreq > highestFreq){
+                highestFreq = currentFreq;
+                highestNum = currentKey;
+            }
+        }
+        int lowestFreq = Integer.MAX_VALUE;
+        int lowestNum = -1;
+        for(int key : freq.keySet()){
+            int currentKey = key;
+            int currentFreq = freq.get(currentKey);
+            if(lowestFreq > currentFreq){
+                lowestNum = currentKey;
+                lowestFreq = currentFreq;
+            }
+        }
+        int ans[] = {highestNum, lowestNum};
+        return ans;
+    }
+
 
 
 
     static void main() {
         int [] arr = {1,2,3,4,4,4,4,5,4,5,5,5,5,5,5};
-        int ans = getMode(arr);
-        System.out.println( "sbse jyada frequency " + ans + " ki h");
+        int [] ans = getHighestLowestFreqElement(arr);
+        System.out.println(ans[0]);
+        System.out.println(ans[1]);
+//        System.out.println( "sbse jyada frequency " + ans + " ki h");
 ////        shiftBy1(arr);
 //        printAlternaate(arr);
 
