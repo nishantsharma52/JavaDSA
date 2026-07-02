@@ -40,14 +40,29 @@ public class lac_29 {
         return xorSum;
     }
 
+    //Problem-3
+    static int uniqueElement(int[] arr){
+        int unique = 0;
+        for (int n : arr){
+            unique = unique ^ n;
+        }
+        return unique;
+    }
+
 
 
     static void main() {
 //        int arr[] = {1, 0, 1, 0, 0, 1, 0};
 //        int ans[] = sortArray(arr);
 //        System.out.println(Arrays.toString(ans));
-        int arr[] = {0, 1, 2, 3, 7, 5, 6};
-        System.out.println(missingNumber(arr));
+
+        int arr[] = { 1,1,2,2,3,3,4,};
+        System.out.println(uniqueElement(arr));
+
+
+//
+//        int arr[] = {0, 1, 2, 3, 7, 5, 6};
+//        System.out.println(missingNumber(arr));
 
     }
 }
