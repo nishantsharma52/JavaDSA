@@ -1,11 +1,11 @@
 package javabasics;
 
 public class Methods {
-//    static void print2KaTable (){
-//        for (int i=1; i<=10; i++){
-//            System.out.println("->" + 2*i);
-//        }
-//    }
+    static void print2KaTable (){
+        for (int i=1; i<=10; i++){
+            System.out.println("->" + 2*i);
+        }
+    }
 
     static void printSum(int x, int y) {
         System.out.println("SUM=" + (x+y));
