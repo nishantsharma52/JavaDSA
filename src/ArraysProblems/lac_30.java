@@ -18,6 +18,8 @@ public class lac_30 {
         return  ans;
     }
 
+    //problem 2
+
     static List<List<Integer>> threeSum(int[] nums) {
         int n = nums.length;
         Set<List<Integer>> output = new HashSet<>();
@@ -39,14 +41,37 @@ public class lac_30 {
         return new ArrayList<>(output);
     }
 
+    //problem 3
+
+    static int removeDuplicate(int[] arr){
+        int i=0;
+        int j= 1;
+        int n = arr.length;
+        while(j<n){
+            if(arr[i]==arr[j]){
+                j++;
+
+            }
+            else{
+                i++;
+                arr[i] = arr[j];
+                j++;
+            }
+        }
+        return i+1;
+    }
+
+
     static void main() {
 //        problem 1..
 //        int[] arr = { 1,2,4,5,6,7};
 //        int target = 3;
 //        int ans[] = twoSum(arr,target);
-//        System.out.println(Arrays.toString(ans));
-        int[] nums = { -1,0,1,2,-1,4};
-        System.out.println(threeSum(nums));
+////        System.out.println(Arrays.toString(ans));
+//        int[] nums = { -1,0,1,2,-1,4};
+//        System.out.println(threeSum(nums));
+        int [] arr ={ 1,1,2,2,4,3,5,6,7};
+        System.out.println(removeDuplicate(arr));
 
     }
 }
