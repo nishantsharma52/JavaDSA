@@ -61,6 +61,49 @@ public class lac_30 {
         return i+1;
     }
 
+    // problem 4
+
+    static int findFirstRepeatingElement(int[] arr){
+        HashMap<Integer,Integer> freq = new HashMap<>();
+        //freq store
+        for(int num:arr){
+            freq.put(num,freq.getOrDefault(num,0) + 1);
+            System.out.println(freq);
+        }
+        for(int i : arr){
+            if(freq.get(i) > 1){
+                return i;
+            }
+        }
+        //agar koi bhi freq greater than 1 nhi h to return -1;
+        return  -1;
+    }
+
+    // problem 5
+    static int pivotIndex(int[] nums) {
+        int n =  nums.length;
+        int leftSum[] = new int[n];
+        int rightSum[] = new int [n];
+        //file right sum bala array
+        leftSum[0] = nums[0];
+        for(int i = 1; i<n; i++){
+            leftSum[i] = leftSum[i-1] + nums[i];
+
+        }
+        // fill right sum bala array
+        rightSum[n-1] = nums[n-1];
+        for(int i = n-2; i>=0; i--){
+            rightSum[i] = rightSum[i+1] + nums[i];
+        }
+        for(int i = 0; i<n; i++){
+            if(leftSum[i] == rightSum[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
 
     static void main() {
 //        problem 1..
@@ -70,8 +113,13 @@ public class lac_30 {
 ////        System.out.println(Arrays.toString(ans));
 //        int[] nums = { -1,0,1,2,-1,4};
 //        System.out.println(threeSum(nums));
-        int [] arr ={ 1,1,2,2,4,3,5,6,7};
-        System.out.println(removeDuplicate(arr));
+//        int [] arr ={ 1,1,2,2,4,3,5,6,7};
+//        System.out.println(removeDuplicate(arr));
+//        int[] arr = {1,2,3,1,4,5};
+//        System.out.println(findFirstRepeatingElement(arr));
+        int[] nums = {1,7,1,5,5,6};
+        System.out.println(pivotIndex(nums));
+
 
     }
 }
