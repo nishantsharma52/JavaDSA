@@ -17,6 +17,7 @@ public class lac_31 {
                 arr[position] = - arr[position];
             }
         }
+        // array travel kro or agr value positive h to i+1 add kr do
         for(int i = 0; i<n; i++){
             if(arr[i]>0){
                 ans.add(i+1);
