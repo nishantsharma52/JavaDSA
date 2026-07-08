@@ -69,30 +69,30 @@ public class lac_33 {
 
     // proble 4
 
-    static int[][] transpose(int[][] matrix) {
-        if(matrix == null || matrix.length == 0){
-            return new int[0][0];
-        }
-        //for original arrray
-        int totalRows = matrix.length;
-        int totalCols = matrix[0].length;
-
-        //for new array
-        int newTotalRows = totalCols;
-        int newTotalCols = totalRows;
-
-        int ans[][] = new int [newTotalRows][newTotalCols];
-
-        //actual logic
-
-        for(int i = 0; i<totalRows; i++){
-            for(int j= 0; j<totalCols; j++){
-                ans[j][i] = matrix[i][j];
-            }
-        }
-        return ans;
-
-    }
+//    static int[][] transpose(int[][] matrix) {
+//        if(matrix == null || matrix.length == 0){
+//            return new int[0][0];
+//        }
+//        //for original arrray
+//        int totalRows = matrix.length;
+//        int totalCols = matrix[0].length;
+//
+//        //for new array
+//        int newTotalRows = totalCols;
+//        int newTotalCols = totalRows;
+//
+//        int ans[][] = new int [newTotalRows][newTotalCols];
+//
+//        //actual logic
+//
+//        for(int i = 0; i<totalRows; i++){
+//            for(int j= 0; j<totalCols; j++){
+//                ans[j][i] = matrix[i][j];
+//            }
+//        }
+//        return ans;
+//
+//    }
 
     static void main() {
 //        int[][] arr = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
@@ -100,14 +100,14 @@ public class lac_33 {
 //        int m = arr[0].length;
 ////        List<Integer> ans = rowSum(arr);
 //        System.out.println(wavePrintMatrix(arr, n, m));
-        int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
-        int[][] result = transpose(matrix);
-        for (int i = 0; i < result.length; i++) {
-            for (int j = 0; j < result[0].length; j++) {
-                System.out.print(result[i][j] + " ");
-            }
-            System.out.println();
-        }
+//        int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+//        int[][] result = transpose(matrix);
+//        for (int i = 0; i < result.length; i++) {
+//            for (int j = 0; j < result[0].length; j++) {
+//                System.out.print(result[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
 
     }
 
