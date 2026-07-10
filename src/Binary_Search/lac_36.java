@@ -1,6 +1,7 @@
 package Binary_Search;
 
 public class lac_36 {
+    // binary search ki time complexity o(logn) hoti h
     static  int binarySearch(int[] nums, int target){
         int n = nums.length;
         int start = 0;
