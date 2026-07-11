@@ -1,4 +1,4 @@
-package sorting;
+package Binary_Search;
 
 public class lac_37 {
     // in sbki time complexity 0(logn) hi h
