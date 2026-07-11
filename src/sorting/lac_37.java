@@ -52,12 +52,12 @@ public class lac_37 {
 
 
             // find number of occurence mtlb kon sa number kitni bar aaya h mtlb uski freq...
-//        int[] arr = {10,20,30,30,30,30,30,40,50};
-//        int target = 30;
-//        int lowerBound = getLowerBound(arr,target);
-//        int upperBound = getUpperBound(arr, target);
-//        int ans = upperBound - lowerBound;
-//        System.out.println(ans);
+        int[] arr = {10,20,30,30,30,30,30,40,50};
+        int target = 30;
+        int lowerBound = getLowerBound(arr,target);
+        int upperBound = getUpperBound(arr, target);
+        int ans = upperBound - lowerBound;
+        System.out.println(ans);
 
     }
 }
