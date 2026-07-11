@@ -1,6 +1,7 @@
 package sorting;
 
 public class lac_37 {
+    // in sbki time complexity 0(logn) hi h
     // lower bound ka mtlb sbse chota index target
     // ka ya agr target present nhi h to just bdi value ka index ..
     static  int getLowerBound(int[] arr, int target){
