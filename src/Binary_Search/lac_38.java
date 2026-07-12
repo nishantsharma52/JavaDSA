@@ -1,7 +1,7 @@
 package Binary_Search;
 
 public class lac_38 {
-    //problem 1
+    //problem:1
 
     static int findPeakElement(int[] arr){
         int n = arr.length;
