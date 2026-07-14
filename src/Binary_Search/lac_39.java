@@ -39,7 +39,7 @@ public class lac_39 {
         return  -1;
     }
     public int search(int[] nums, int target){
-//        int[] nums  = {1,2,3,4,};
+//        int[] nums  = {1,2,3,4,5};
         int n = nums.length;
       int pivotIndex = findPivotIndex(nums);
 
