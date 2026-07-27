@@ -4,7 +4,8 @@ public class lac_45_RotiPrathaProblem {
     // yha mid = timeLimit h ;
     static boolean isValidAns(int[] cook, int p ,int n, int mid){
     int prathaCount = 0;
-    // ek ek krke haar 1 cook ke pass jaege
+    // ek-ek  krke haar 1 cook ke pass jaege
+
         for(int i = 0; i<cook.length; i++){
             int currentCookRank = cook[i];
             int timeTaken = 0;
