@@ -25,6 +25,11 @@ public class lac_45_RotiPrathaProblem {
                         break;
                     }
             }
+            //jb ye loop khatam hota h, to ye ith cook jitne prate bna skta tha,
+            //unko totalPrataCount me add kr chuka hota h
+            if(prathaCount>=p){
+                return true;
+            }
 
         }
         if(prathaCount>=p){
