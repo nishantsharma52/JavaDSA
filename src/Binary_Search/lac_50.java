@@ -38,7 +38,7 @@ public class lac_50 {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 5, 6, 8, 10, 15, 20, 25, 30, 35, 40, 50};
+        int[] arr = {1, 2, 3, 4, 5, 6, 8, 10, 15, 20, 25, 30, 35, 40, 50,60};
 
         System.out.println(unboundedSearch(arr, 15)); // Output: 8
     }
