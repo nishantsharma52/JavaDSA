@@ -38,7 +38,7 @@ public class lac_51 {
 
     }
     static void main(String[] args) {
-       String s = " my name is nishant";
+       String s = "my name is nishant";
         System.out.println(reverseWords(s));
 
     }
