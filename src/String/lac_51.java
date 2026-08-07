@@ -37,9 +37,34 @@ public class lac_51 {
         return ans.toString();
 
     }
-    static void main(String[] args) {
-       String s = "my name is nishant";
-        System.out.println(reverseWords(s));
 
+    // problem 2
+
+    static char getMaxOccuringChar(String s){
+       int[] freq = new int[26];
+
+       // travese over string and update their freq accordingly
+        for(int i = 0; i<s.length(); i++){
+            char currChar = s.charAt(i);
+            freq[currChar-'a']++;
+        }
+        int maxFreq = -1;
+        char ans = 'a';
+
+        // traverse over the freq array and get the highest freq walla element
+        for(int i = 0; i<26; i++){
+            if(freq[i]>maxFreq){
+                maxFreq = freq[i];
+                ans = (char)(i+'a');
+            }
+        }
+        return ans;
+    }
+
+    static void main(String[] args) {
+//       String s = "my name is nishant";
+//        System.out.println(reverseWords(s));
+        String s = "textsample";
+        System.out.println(getMaxOccuringChar(s));
     }
 }
