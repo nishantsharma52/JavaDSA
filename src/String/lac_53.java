@@ -1,6 +1,7 @@
 package String;
 
 public class lac_53 {
+    // problem 1
    static String removeDuplicates(String s) {
         StringBuilder ans  = new StringBuilder();
 
@@ -17,6 +18,34 @@ public class lac_53 {
             }
         }
         return ans.toString();
+
+    }
+    // problem 2
+    static int compress(char[] chars) {
+       int readIndex = 0;
+       int writeIndex = 0;
+       while (readIndex < chars.length){
+           char currentChar = chars[readIndex];
+           int count = 0;
+            // count duplicate char ko
+           while(readIndex < chars.length && currentChar == chars[readIndex]){
+               readIndex++;
+               count++;
+           }
+           // ab mere pass current char and uska count dono available h
+            chars[writeIndex] = currentChar;
+           writeIndex++;
+
+           // now insert the count
+           if(count>1){
+               String countStr = String.valueOf(count);
+               for(char digit: countStr.toCharArray()){
+                   chars[writeIndex] = digit;
+                   writeIndex++;
+               }
+           }
+       }
+       return  writeIndex;
 
     }
     static void main(String[] args) {
