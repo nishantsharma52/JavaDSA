@@ -20,7 +20,8 @@ public class lac_53 {
         return ans.toString();
 
     }
-    // problem 2
+
+    // ++++++++++ problem 2 ++++++++++++
     static int compress(char[] chars) {
        int readIndex = 0;
        int writeIndex = 0;
