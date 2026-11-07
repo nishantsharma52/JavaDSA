@@ -1,5 +1,6 @@
 package Recursion;
 public class lec_57 {
+
     // Print My Name n times
     static void printMyName(int n){
         // base case
@@ -86,6 +87,7 @@ public class lec_57 {
         int ans = countTarget(arr,i+1,target,count);
         return ans;
     }
+
     // print digit of a number
     static void printDigit(int n){
         if(n==0){
@@ -101,7 +103,7 @@ public class lec_57 {
 
     static void main(String[] args) {
 //        printMyName(5);
-//        print1ToN(5,1);
+        print1ToN(5,1);
 //        printNTo1(5);
 //        int mini = Integer.MAX_VALUE;
 //        System.out.println(min(arr,i,mini));
@@ -112,6 +114,6 @@ public class lec_57 {
 //        int count = 0;
 //        int ans = countTarget(arr,i,target,count);
 //        System.out.println(ans);
-        printDigit(123);
+//        printDigit(123);
     }
 }
